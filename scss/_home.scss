@@ -1,0 +1,221 @@
+//Nav section
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    height: 5rem;
+    z-index: 1000;
+
+
+
+
+
+    nav {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5rem 0;
+        transition: 1s ease-in-out;
+    }
+
+    .nav-border {
+        background: $deep-blue;
+        // box-shadow: 0 0 30px rgb(87, 85, 85);
+        transition: 1s ease-in-out;
+    }
+
+    ul.main-nav {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    ul.main-nav li {
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+
+    ul.main-nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: .9rem;
+    }
+
+    ul.main-nav i {
+        margin-left: .2rem;
+        font-weight: bold;
+        transition: 1s;
+    }
+
+    ul.main-nav li ul{
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        top: 1.1rem;
+        right: 0; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.main-nav li ul li{
+        width: 8rem;
+        height: 2rem;
+        border-radius: 3%;
+        background-color: lighten($deep-blue, 10%);
+        border-bottom: solid whitesmoke 1px;
+        text-align: center;
+        padding-top: .9rem;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+        display: none;
+    }
+
+    ul.main-nav li:hover i {
+        transform: rotate(180deg);
+    }
+
+    ul.main-nav li:hover ul li {
+        display: block;
+    }
+
+    ul li ul li:hover {
+        transform: scale(1.08);
+    }
+
+    #login-dropdown {
+        left: -1.5rem;
+    }
+
+    .burger-container {
+        display: none;
+    }
+
+    .burger-container div {
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        margin: 5px 0;
+        transition: .5s ease;
+    }
+}
+
+#showcase {
+    position: relative;
+    overflow-x: hidden;
+
+    div#slide-images {
+        position: relative;
+        width: 400%;
+        height: 100vh;
+        margin: 0;
+        left: 0;
+        top: -1rem;
+        animation: 20s slider infinite linear;
+        overflow-x: hidden;
+
+    }
+
+   
+
+    div#slide-images img {
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+
+    .showcase-text {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background:rgba(7, 11, 75, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1rem;
+    }
+
+    .showcase-text .text-container {
+        width: 50%;
+        color: white;
+    }
+
+    .text-container h2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        font-family: $header-font;
+    }
+
+    .text-container p {
+        margin-top: -2rem;
+        font-size: 1rem;
+        line-height: 1.2;
+        font-weight: 100;
+    }
+
+    .showcase-links {
+        margin-top: 2rem;
+
+    }
+
+    .text-container .showcase-links a {
+        color: white;
+        border: solid 1px white;
+        background: none;
+        padding: .5rem 4rem;
+        text-decoration: none;
+        font-size: .9rem;
+        transition: 1s;
+    }
+
+    .text-container .showcase-links a:last-child {
+        background: rgb(245, 34, 34);
+        border: none;
+    }
+
+    .text-container .showcase-links a:first-child:hover {
+        background-color: $deep-blue;
+        border: solid $deep-blue 1px;
+    }
+
+    .text-container .showcase-links a:last-child:hover {
+        background-color: lighten(rgb(245, 34, 34), 20%);
+    }
+
+    .showcase-text img {
+        border-radius: 60%;
+        width: 25%;
+        animation: showcase-logo-slider 20s linear infinite;
+    }
+    
+}
+
+
+
+//animations
+@keyframes slider {
+    0% {left: 0%;}
+    20% {left: 0%;}
+    35% {left: -100%;}
+    50% {left: -100%;}
+    60% {left: -200%;}
+    75% {left: -200%;}
+    85% {left: -300%;}
+    100% {left: -300%;}
+}
+
+@keyframes showcase-logo-slider {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

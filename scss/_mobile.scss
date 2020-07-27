@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+ header {
+     nav {
+         .logo-container img {
+             width: 70%;
+         }
+
+        ul.main-nav{
+             width: 70vw !important;
+             height: 100vh !important;
+             background: rgb(7, 11, 75);
+             flex-direction: column;
+             position: fixed !important;
+             top: -2rem !important;
+             left: -100%;
+             padding: 1rem 0 !important;
+            //  transform: translateX(100%);
+             transition: 1s ease-in-out;
+         }
+
+         .show-nav {
+             left: 0% !important;
+         }
+
+         ul.main-nav li {
+             width: 100% !important;
+             text-align: center;
+         }
+
+         
+        ul.main-nav li ul {
+            position: relative !important;
+        }
+
+        ul.main-nav li ul li {
+            width: 100% !important;
+            height: 2rem !important;
+
+        }
+
+        ul li ul li:hover {
+            transform: scale(1) !important;
+        }
+
+        #login-dropdown {
+            left: 0 !important;
+        }
+
+        .burger-container {
+            display: block;
+        }
+
+
+        .toggle div:first-child {
+            transform: rotateZ(-45deg) translate(-4px, 5px);
+        }
+
+        .toggle div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .toggle div:last-child {
+            transform: rotateZ(45deg) translate(-5px, -6px);
+        }
+     }
+ }
+
+ #showcase {
+    .showcase-text {
+        flex-direction: column-reverse !important;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem !important;
+    }
+
+    .showcase-text .text-container {
+        width: 90% !important;
+        text-align: center;
+    }
+
+    .text-container h2 {
+        font-size: 2rem;
+    }
+
+    .text-container p {
+        margin: 0 !important;
+        font-size: .9rem;
+    }
+
+    .showcase-links span:hover {
+        transform: scale(1.05);
+    }
+
+    .text-container .showcase-links a {
+        padding: .5rem 2rem !important;
+    }
+
+    .showcase-text img {
+        margin-top: 2rem;
+    }
+
+ }
+}
+

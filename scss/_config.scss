@@ -1,0 +1,18 @@
+//fonts
+$main-font: 'Roboto', sans-serif;
+$header-font: 'Recursive', sans-serif;
+
+//colors
+$deep-blue: rgba(7, 11, 75, 0.85);
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+
+.hide {
+    display: none;
+}
