@@ -100,5 +100,102 @@
     }
 
  }
-}
 
+ //about section 
+    .about-container {
+        flex-direction: column;
+        justify-content: center !important;
+
+        .about-image {
+            display: none;
+        }
+
+        .about-text-container {
+            width: 80% !important;
+            height: 100%;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding: 1rem !important;
+        }
+
+        .about-text-container h2{
+            margin-left: 0 !important;
+            font-family: $header-font;
+            font-size: 2rem !important;
+        }
+
+        .about-text-container p{
+            margin-left: 0 !important;
+        }
+
+        .about-text-container img {
+            display: block !important;
+        }
+
+        div.about-link {
+            margin-bottom: 2rem !important;
+        }
+
+        .about-text-container a {
+            margin-left: 0 !important;
+            padding: 1rem 2rem;
+
+        }
+    }
+
+    //count section
+    .count-container {
+        flex-direction: column;
+
+        .count-item i {
+            font-size: 1.5rem !important;
+            margin-right: .5rem !important;
+        }
+    
+        .count-item .number {
+            font-size: 1rem !important;
+        }
+    }
+
+    //job-section
+    .job-container {
+        h2 {
+            font-size: 2rem !important;
+        }
+
+        .job-list-container {
+            flex-direction: column !important;
+        }
+
+        .job-list-container .job {
+            width: 60% !important;
+            padding: 3rem 2rem;
+            margin-bottom: 1rem !important;
+        }
+
+        .job-link {
+            margin-top: 2rem !important;
+        }
+        
+    }
+
+    //news section
+    .news-container {
+
+        .news-items {
+            width: 100%;
+            grid-template-columns: 1fr !important;
+        }
+
+        h3 {
+            font-size: 2.5rem !important;
+        }
+
+        .news-item {
+            margin: 1rem 0 !important;
+
+        }
+
+        
+    }
+}

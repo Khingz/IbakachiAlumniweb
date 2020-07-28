@@ -1,0 +1,168 @@
+news and event
+<section class="news-event-container">
+    <div class="news">
+        <h3>LATEST NEWS</h3>
+        <div class="news-item">
+            <img src="./img/logo3-resized.png" alt="">
+            <div class="news-text">
+                <h5>ALUMNI DATABASE PHASE II</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus doloribus optio voluptatibus harum reiciendis quam ex quasi iusto perferendis!</p>
+            </div>
+        </div><hr>
+        <div class="news-item">
+            <img src="./img/logo3-resized.png" alt="">
+            <div class="news-text">
+                <h5>MR. UKPABIO WINS THE STATE CHEMISTRY TEACHER OF THE YEAR</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus doloribus optio voluptatibus harum reiciendis quam ex quasi iusto perferendis!</p>
+            </div>
+        </div><hr>
+        <div class="news-item">
+            <img src="./img/logo3-resized.png" alt="">
+            <div class="news-text">
+                <h5>ALUMNI DATABASE PHASE II</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus doloribus optio voluptatibus harum reiciendis quam ex quasi iusto perferendis!</p>
+            </div>
+        </div>
+        <div class="neev-link">
+            <a href=".news.html">VIEW MORE NEWS</a>
+        </div>
+    </div>
+    <div class="event">
+        <h3>EVENT CALENDAR</h3>
+        <div class="event-items">
+            <div class="date">
+                <p class="day">SUN</p>
+                <p class="day-num">20</p>
+                <p class="month">DEC</p>
+            </div>
+            <div class="event-details">
+                <h6>CHILD DEDICATION</h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At animi quo commodi magni itaque error laborum est vitae, magnam sunt.</p>
+                <p>23 Ikot Ekpene Rd Uyo</p>
+            </div>
+        </div><hr>
+        <div class="event-items">
+            <div class="date">
+                <p class="day">FRI</p>
+                <p class="day-num">25</p>
+                <p class="month">DEC</p>
+            </div>
+            <div class="event-details">
+                <h6>2020 HOMECOMING</h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At animi quo commodi magni itaque error laborum est vitae, magnam sunt.</p>
+                <p>LSSSS Ibakachi</p>
+            </div>
+        </div><hr>
+
+        <div class="event-items">
+            <div class="date">
+                <p class="day">SUN</p>
+                <p class="day-num">20</p>
+                <p class="month">DEC</p>
+            </div>
+            <div class="event-details">
+                <h6>THANKSGIVING SERVICE</h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At animi quo commodi magni itaque error laborum est vitae, magnam sunt.</p>
+                <p>23 Ikot Ekpene Rd Uyo</p>
+            </div>
+        </div>
+        <div class="neev-link">
+            <a href=".event.html">VIEW MORE EVENT</a>
+        </div>
+    </div>
+</section>
+
+
+.news-event-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    // align-items: flex-start;;
+    padding: 4rem 0;
+
+    // .neev {
+    //     width: 40%;
+    //     padding: 2.5rem 2rem;
+    //     text-align: center;
+    //     border: 1px solid $deep-blue;
+    //     box-shadow: 0 0 10px $deep-blue;
+    // }
+
+    .news,
+    .event {
+        // width: 70%;
+        align-self: center;
+    }
+
+    .news h3,
+    .event h3{
+        font-family: $header-font;
+        font-size: 2rem;
+        color: $blue-font;
+    }
+
+    .news .news-item {
+        // width: 60%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: left;        
+    }
+
+    .news-item .news-text {
+        margin-left: 1rem;
+    }
+
+
+    .event .event-items {
+        display: flex;
+        justify-content: left;
+        text-align: left;        
+        align-items: center;
+    }
+
+    .event-items .date {
+        margin-right: 1.3rem;
+    }
+
+    .event-items .date .day{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: -1.5rem;
+    }
+
+    .event-items .date .day-num {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: $red-button;
+        font-family: $header-font;
+        margin-bottom: -.5rem;
+
+    }
+
+    .event-details h6{
+        font-size: 1.2rem;
+        margin-bottom: 0rem;
+    }
+
+    .event-details p:last-child {
+        color: $bg-blue;
+    }
+
+    .neev-link {
+        margin-top: 2rem;
+        transition: .5s ease-in-out;
+    }
+
+    .neev-link a {
+        border: none;
+        background: $bg-blue;
+        padding: .7rem 2rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .neev-link:hover {
+        transform: scale(1.05);
+    }
+}

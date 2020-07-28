@@ -20,13 +20,3 @@ const toggleNav = () => {
 }
 burger.addEventListener('click', toggleNav)
 
-//hide side nav when a nav link is clicked
-const navLinks = document.querySelectorAll('ul.main-nav li');
-navLinks.forEach(navLink => {
-    navLink.addEventListener('click', () => {
-        if(navLink.hasAttribute('href')) {
-            console.log('hello');
-        }
-    })
-    
-})
