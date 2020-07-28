@@ -198,4 +198,43 @@
 
         
     }
+
+    //event section
+    .event-container {
+        padding: 4rem 3rem;
+    
+        h3 {
+            font-size: 2rem !important;
+        }
+    
+        .event-items {
+            grid-template-columns: 1fr !important;
+        }
+
+        .event-item{
+            width: 100%;
+        }
+    }
+
+    //footer
+    footer {
+
+        .footer {
+            flex-direction: column;
+            justify-content: stretch !important;
+            align-items: left !important;
+            // padding: 3rem .5rem !important;
+
+            
+            .logo,
+            .info {
+                width: 90%;
+                margin-bottom: .5rem !important;
+            }
+
+            .social-icon {
+                margin-top: 1rem !important;
+            }
+        }
+    } 
 }
