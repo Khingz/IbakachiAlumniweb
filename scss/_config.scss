@@ -17,6 +17,16 @@ body {
     font-family: $main-font;
 }
 
+.active {
+    border: solid 1px white;
+    padding: .5em 1rem;
+}
+
 .hide {
     display: none;
+}
+
+.nav-border-others {
+    background: rgba(7, 11, 75, 0.9);
+    box-shadow: 0 0 30px black;
 }

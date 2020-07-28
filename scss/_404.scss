@@ -1,0 +1,21 @@
+.not-found {
+    position: relative;
+    top: 5vh;
+    height: 70vh;
+    background: url('../img/slider-1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+
+    h2 {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 2rem;
+        padding: 5rem 3rem;
+    }
+}

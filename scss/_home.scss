@@ -38,6 +38,12 @@ header {
         position: relative;
         cursor: pointer;
         transition: .5s ease-in-out;
+        padding-bottom: .5rem;
+
+    }
+
+    ul.main-nav li:hover {
+        border-bottom: solid 1px white;
     }
 
     ul.main-nav li a {
@@ -531,7 +537,7 @@ header {
 
     div#slide-images {
         position: relative;
-        width: 300%;
+        width: 400%;
         height: 50%;
         margin: 0;
         left: 0;
@@ -547,7 +553,7 @@ header {
     }
 
     div#slide-images img {
-        width: 12.5%;
+        width: 12%;
         height: 50%;
         float: left;
     }
@@ -615,14 +621,16 @@ footer {
 }
 
 @keyframes slider-gallery {
-    0% {left: 0%;}
-    20% {left: -100%;}
-    35% {left: -200%;}
-    50% {left: -300%;}
-    60% {left: -400%;}
-    75% {left: -500%;}
-    85% {left: -600%;}
-    100% {left: -600%;}
+    // 0% {left: 0%;}
+    // 20% {left: 0%;}
+    // 35% {left: -100%;}
+    // 50% {left: -100%;}
+    // 60% {left: -200%;}
+    // 75% {left: -200%;}
+    // 85% {left: -300%;}
+    // 100% {left: -300%;}
+    from{left: 0;}
+    to{left: -190%;}
 }
 
 @keyframes showcase-logo-slider {
