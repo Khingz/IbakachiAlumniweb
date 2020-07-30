@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
  header {
      nav {
          .logo-container img {
@@ -237,4 +237,116 @@
             }
         }
     } 
+
+    //about page
+
+    //history
+    .brief-history {
+        width: 90% !important;
+        
+        .history-image {
+            display: none !important;
+        }
+    
+        .history-content {
+            width: 100%;
+            padding: 1rem;
+    
+        }
+    
+        .history-content h3 {
+            font-size: 1.5rem !important;
+        }
+    
+        .history-mobile {
+            display: block;
+            width: 100%;        
+        }
+    }
+
+
+    //achievement
+    .first-achievement {
+        width: 90% !important;
+    
+        .achieve-container {
+            display: none;
+        }
+
+         .achievement-content {
+             width: 100%;
+             padding: 1rem;
+         }
+    
+         .achievement-content h3 {
+            font-size: 1.5rem !important;
+        }
+    
+        .achievement-mobile {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    //commitee
+    .our-team {
+        width: 70%;
+        margin: 0 auto;
+        padding: 3rem 0;
+        background-color: whitesmoke;
+    
+        .set-team {
+            flex-direction: column !important;
+        }
+    
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-family: $header-font;
+            color: $blue-font;
+        }
+    
+        .details {
+            background: $bg-blue;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: -1rem;
+            padding: .3rem;
+            color: white;
+            text-align: center;
+            border-radius: .5rem;
+        }
+    
+        .details h4 {
+            margin-bottom: -1rem;
+        }
+    
+        .details p {
+            font-size: .9rem;
+        }
+
+        .team-member {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    //contact page
+    .contact-body-container {
+        grid-template-columns: 1fr !important;
+
+        .map-area {
+            height: 30rem;
+        }
+
+        form {
+            margin-left: 0 !important;
+            margin-top: 4rem !important;
+            text-align: center;
+        }
+
+        form #contact-submit {
+            width: 82% !important;
+        }
+    }
 }

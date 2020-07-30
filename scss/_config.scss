@@ -30,3 +30,42 @@ body {
     background: rgba(7, 11, 75, 0.9);
     box-shadow: 0 0 30px black;
 }
+
+
+//page titles
+.title-section {
+    position: relative;
+    top: 0;
+    background: url('../img/mountains.jpg');
+    background-size: cover;
+    padding: 3rem 0;
+    background-position: center;
+
+    .title-section::after {
+        position: relative;
+        top: 8vh;
+        height: 10vh;
+        background: $deep-blue;
+        background-size: cover;
+        padding: 3rem 0;
+        background-position: center;
+    }
+
+    .title-item {
+        background-color: rgba($color: $deep-blue, $alpha: .8);
+        color: white;
+        text-align: center;
+        padding: 4rem 1rem;
+        margin-top: 6rem;
+    }
+
+    .title-item h2 {
+        font-family: $header-font;
+        font-size: 3rem;
+
+    }
+
+    .title-item p {
+        margin-top: -2rem;
+    }
+}

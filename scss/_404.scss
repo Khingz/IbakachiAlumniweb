@@ -1,11 +1,11 @@
 .not-found {
     position: relative;
-    top: 5vh;
+    top: 4vh;
     height: 70vh;
     background: url('../img/slider-1.png') no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: -2;
+    margin-bottom: 1rem;
 
     h2 {
         text-align: center;
@@ -16,6 +16,6 @@
         background-color: rgba(0, 0, 0, 0.7);
         color: white;
         font-size: 2rem;
-        padding: 5rem 3rem;
+        padding: 2rem 3rem;
     }
 }

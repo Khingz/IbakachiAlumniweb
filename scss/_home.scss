@@ -410,6 +410,7 @@ header {
         margin: 0 1rem;
         padding-bottom: 1rem;
         transition: .5s;
+        box-shadow: 0 0 10px black;
     }
 
     .news-item:hover {
@@ -538,11 +539,14 @@ header {
         width: 400%;
         height: 50%;
         margin: 0;
+        margin-bottom: 1rem;
         left: 0;
         top: -1rem;
-        animation: 20s slider-gallery infinite linear;
+        border-top: dashed $deep-blue .5rem;
+        border-bottom: dashed $deep-blue .5rem;
+        animation: 30s slider-gallery infinite linear;
         overflow-x: hidden;
-
+        
     }
 
     div#slide-images:last-child {

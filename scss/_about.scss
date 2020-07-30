@@ -1,0 +1,115 @@
+main {
+    background: lighten($color: $bg-blue, $amount: 62%);
+}
+
+
+.brief-history {
+    background-color: whitesmoke;
+    width: 80%;
+    margin: 9rem auto 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .history-image {
+        width: 100%;
+    }
+
+    .history-image img {
+      width: 100%;
+    }
+
+    .history-content {
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .history-content h3 {
+        font-size: 2rem;
+        font-family: $header-font;
+        font-weight: bold;
+        color: $blue-font;
+        text-align: center;
+    }
+
+    .history-mobile {
+        display: none;
+    }
+}
+
+.first-achievement {
+    background-color: whitesmoke;
+    width: 80%;
+    margin: 9rem auto 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .achieve-container {
+        width: 100%;
+    }
+
+    .achieve-container img {
+        width: 100%;
+     }
+
+     .achievement-content {
+         width: 100%;
+         padding: 1rem;
+     }
+
+     .achievement-content h3 {
+        font-size: 2rem;
+        font-family: $header-font;
+        font-weight: bold;
+        color: $blue-font;
+        text-align: center;
+    }
+
+    .achievement-mobile {
+        display: none;
+    }
+ 
+
+}
+
+.our-team {
+    width: 90% !important;
+    margin: 0 auto;
+    padding: 3rem 0;
+    background-color: whitesmoke;
+
+    .set-team {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-family: $header-font;
+        color: $blue-font;
+        margin-bottom: 4rem;
+
+    }
+
+    .details {
+        background: $bg-blue;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -1rem;
+        padding: .3rem;
+        color: white;
+        text-align: center;
+        border-radius: .5rem;
+    }
+
+    .details h4 {
+        margin-bottom: -1rem;
+    }
+
+    .details p {
+        font-size: .9rem;
+    }
+}
