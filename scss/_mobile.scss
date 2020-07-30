@@ -14,7 +14,6 @@
              top: -2rem !important;
              left: -100%;
              padding: 1rem 0 !important;
-            //  transform: translateX(100%);
              transition: 1s ease-in-out;
          }
 
@@ -239,6 +238,17 @@
     } 
 
     //about page
+    
+    //title section
+    .title-section {
+        .title-item h2 {
+            font-size: 2rem !important;
+        }
+
+        .title-item p {
+            margin-top: 0 !important;
+        }
+    }
 
     //history
     .brief-history {

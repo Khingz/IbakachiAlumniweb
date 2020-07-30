@@ -15,7 +15,6 @@ const toggleNav = () => {
     const navItems = document.querySelector('.main-nav');
     const showcaseLinks = document.querySelector('.showcase-links')
     navItems.classList.toggle('show-nav');
-    showcaseLinks.classList.toggle('hide');
     burger.classList.toggle('toggle');
 }
 burger.addEventListener('click', toggleNav)
