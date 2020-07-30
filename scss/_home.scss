@@ -549,7 +549,6 @@ header {
 
     div#slide-images:last-child {
         animation-direction: reverse;
-
     }
 
     div#slide-images img {
@@ -621,14 +620,6 @@ footer {
 }
 
 @keyframes slider-gallery {
-    // 0% {left: 0%;}
-    // 20% {left: 0%;}
-    // 35% {left: -100%;}
-    // 50% {left: -100%;}
-    // 60% {left: -200%;}
-    // 75% {left: -200%;}
-    // 85% {left: -300%;}
-    // 100% {left: -300%;}
     from{left: 0;}
     to{left: -190%;}
 }
